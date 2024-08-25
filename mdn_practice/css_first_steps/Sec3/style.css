@@ -1,0 +1,62 @@
+h1{
+    color: red;
+}
+
+.special{
+    color: aqua;
+    font-weight: bold;
+}
+
+li#first_item{
+    color: blue;
+    /* 箇条書きの点を削除 */
+    list-style-type: none;
+}
+
+li.special{
+    list-style-type: square;
+}
+
+li#third_item{
+    font-size: large;
+}
+
+/* 子孫結合子 */
+/* li要素の中にあるem要素を選択 */
+li em{
+    color: green
+}
+
+/* 次兄弟結合子 */
+/* h1要素の直後のp要素を選択
+(仮にh1要素とp要素の間にほかの要素があったらこれは使えない)*/
+h1 + p{
+    font-size: 200%;
+}
+
+/* 複数のセレクターと結合子を組み合わせることができる。 */
+/*  <body> 要素の中にある <h1> 要素の直後に来た <p> 要素
+の中にある special クラスの要素をスタイル設定します。 */
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
+  
+
+/* 状態によってCSSを変えられる */
+/* ページを開く前はピンク色 */
+a:link{
+    color: pink;
+}
+
+/* ページを開いた後は緑色 */
+a:visited{
+    color: green;
+}
+
+/* リンク上にマウスの矢印を持って行ったときにリンクの下線を消す */
+a:hover{
+    text-decoration: none;
+}
+
