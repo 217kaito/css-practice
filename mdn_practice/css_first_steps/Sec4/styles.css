@@ -1,0 +1,66 @@
+/* Create your test CSS here */
+
+p {
+    color: red;
+  }
+  
+  h1{
+    color: blue;
+  }
+
+  a:visited{
+    color: aqua;
+  }
+
+  .Infield{
+    color:blueviolet
+  }
+
+  #onething{
+    background-color: black;
+  }
+
+  *{
+    font-size: small;
+  }
+
+  .outro p{
+    background-color: blue;
+  }
+
+  .outro p:first-child{
+    color: green;
+
+  }
+
+  h1, h2, .intro{
+    text-decoration: overline;
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+    transform: rotate(0.5turn);
+  }
+
+  h1{
+    font-size: xx-large;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                      url("https://www.mariterra.jp/wp/wp-content/uploads/2021/05/milky-way_main.jpg");
+    background-size: cover;
+    background-position: center;
+    /* 画像が表示されなかったときに要素が無地で表示されるのを防ぐために設定する */
+    background-color: blue;
+  }
+
+  body{
+    background-color: yellow;
+  }
+
+  /* アットルールの一つである@media */
+  /* ビューポートが50emより広ければバックグラウンドカラーを白色を適用する */
+  @media(min-width: 50em) {
+    body{
+        background-color: white;
+    }
+  }
